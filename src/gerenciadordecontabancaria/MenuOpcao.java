@@ -13,14 +13,16 @@ import java.util.Scanner;
  */
 public class MenuOpcao {
     static int menuOpcoes() {
-        
-        System.out.println("Que opção deseja?");
-        System.out.println("1 - Cadastrar conta");
-        System.out.println("2 - Saque");
-        System.out.println("3 - Deposito");
-        System.out.println("4 - Transferencia");
-        System.out.println("9 - Sair do programa");
-
+        System.out.println("_________________________________");
+        System.out.println("|Que opção deseja?              |");
+        System.out.println("|_______________________________|");
+        System.out.println("|1 - Cadastrar conta            |");
+        System.out.println("|2 - Saque                      |");
+        System.out.println("|3 - Deposito                   |");
+        System.out.println("|4 - Transferencia              |");
+        System.out.println("|8 - Ver Clientes cadastrados   |");
+        System.out.println("|9 - Sair do programa           |");
+        System.out.println("|_______________________________|");
         Scanner input = new Scanner(System.in);
         int opcao = input.nextInt();
         input.nextLine();

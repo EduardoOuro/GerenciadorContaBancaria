@@ -22,22 +22,26 @@ public class GerenciadorDeContaBancaria {
     
    
     public static void main(String[] args) {
-        Banco banco =new Banco();
+        Banco b =new Banco();
+        
         
         boolean sair = false;
         while (!sair) {
             switch (menuOpcoes()) {
                 case 1:
-                    banco.cadastrarClienteBanco();
+                    b.cadastro();
                     break;
                 case 2:
-                    banco.saque();
+                    b.saque();
                     break;
                 case 3:
-                    banco.deposito();
+                    b.deposito();
                     break;
                 case 4:
-                    banco.transferencia();
+                    b.transferencia();
+                    break;
+                case 8:
+                    b.consultarClientes();
                     break;
                 case 9:
                     sair = true;
